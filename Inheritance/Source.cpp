@@ -8,6 +8,7 @@ Inheritance
 1202 201
 */
 
+#include "Vehicle.h"
 #include <iostream>
 
 using namespace std;

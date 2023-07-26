@@ -10,8 +10,9 @@ using namespace std;
 class Truck : Vehicle
 {
 private:
-	int towingCapacity;
+	int towingCapacity = 100;
 public:
+	void displayInfo();
 	int getTowingCapacity();
 	void setTowingCapacity(int);
 
@@ -25,6 +26,13 @@ int Truck::getTowingCapacity()
 void Truck::setTowingCapacity(int newTowingCapacity)
 {
 	towingCapacity = newTowingCapacity;
+}
+
+void Truck::displayInfo()
+{
+	cout << "Manufacturer: " << getManufacturer() << endl;
+	cout << "Year: " << getYear() << endl;
+	cout << "Towing Capacity: " << towingCapacity << endl;
 }
 
 

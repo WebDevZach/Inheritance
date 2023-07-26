@@ -17,8 +17,14 @@ using namespace std;
 
 int main()
 {
-
+	Vehicle vehicly;
+	Car cary;
+	Truck trucky;
 	
+	vehicly.displayInfo();
+	cary.displayInfo();
+	trucky.displayInfo();
+
 
 
 	return 0;

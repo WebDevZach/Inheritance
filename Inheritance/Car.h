@@ -10,11 +10,11 @@ using namespace std;
 class Car : Vehicle
 {
 private:
-	int doors;
+	int doors = 4;
 public:
 	int getDoors();
 	void setDoors(int);
-
+	void displayInfo();
 };
 int Car::getDoors()
 {
@@ -26,6 +26,13 @@ void Car::setDoors(int newDoors)
 	doors = newDoors;
 }
 
+void Car::displayInfo()
+{
+
+	cout << "Manufacturer: " << getManufacturer() << endl;
+	cout << "Year: " << getYear() << endl;
+	cout << "Doors: " << doors << endl;
+}
 
 
 

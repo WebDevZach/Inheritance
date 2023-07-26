@@ -1,0 +1,32 @@
+#include <iostream>
+using namespace std;
+
+
+#ifndef TRUCK_H
+#define TRUCK_H
+
+
+
+class Vehicle
+{
+private:
+	string manufacturer = "yo mamas";
+	int year = 21;
+public:
+	void displayInfo();
+
+};
+
+void Vehicle::displayInfo()
+{
+	cout << "\nManufacturer: " << manufacturer;
+	cout << "\nYear: " << year;
+}
+
+
+
+
+
+#endif 
+
+#pragma once

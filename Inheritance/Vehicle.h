@@ -10,8 +10,8 @@ using namespace std;
 class Vehicle
 {
 private:
-	string manufacturer;
-	int year;
+	string manufacturer = "yo mamas";
+	int year = 21;
 public:
 	void displayInfo();
 

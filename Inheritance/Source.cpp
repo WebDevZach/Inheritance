@@ -9,6 +9,8 @@ Inheritance
 */
 
 #include "Vehicle.h"
+#include "Truck.h"
+#include "Car.h"
 #include <iostream>
 
 using namespace std;
@@ -16,7 +18,7 @@ using namespace std;
 int main()
 {
 
-
+	
 
 
 	return 0;

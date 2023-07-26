@@ -1,3 +1,2 @@
-﻿C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppClean.targets(77,5): warning : Access to the path 'c:\users\jleye\source\repos\inheritance\x64\debug\inheritance.exe' is denied.
-  Source.cpp
-LINK : fatal error LNK1104: cannot open file 'C:\Users\JLeye\source\repos\Inheritance\x64\Debug\Inheritance.exe'
+﻿  Source.cpp
+  Inheritance.vcxproj -> C:\Users\JLeye\source\repos\Inheritance\x64\Debug\Inheritance.exe

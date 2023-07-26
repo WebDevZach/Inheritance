@@ -7,21 +7,26 @@ using namespace std;
 
 
 
-class Vehicle
+class Truck : Vehicle
 {
 private:
-	string manufacturer = "yo mamas";
-	int year = 21;
+	int towingCapacity;
 public:
-	void displayInfo();
+	int getTowingCapacity();
+	void setTowingCapacity(int);
 
 };
 
-void Vehicle::displayInfo()
+int Truck::getTowingCapacity()
 {
-	cout << "\nManufacturer: " << manufacturer;
-	cout << "\nYear: " << year;
+	return towingCapacity;
 }
+
+void Truck::setTowingCapacity(int newTowingCapacity)
+{
+	towingCapacity = newTowingCapacity;
+}
+
 
 
 

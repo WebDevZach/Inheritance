@@ -7,20 +7,23 @@ using namespace std;
 
 
 
-class Vehicle
+class Car : Vehicle
 {
 private:
-	string manufacturer = "yo mamas";
-	int year = 21;
+	int doors;
 public:
-	void displayInfo();
+	int getDoors();
+	void setDoors(int);
 
 };
-
-void Vehicle::displayInfo()
+int Car::getDoors()
 {
-	cout << "\nManufacturer: " << manufacturer;
-	cout << "\nYear: " << year;
+	return doors;
+}
+
+void Car::setDoors(int newDoors)
+{
+	doors = newDoors;
 }
 
 

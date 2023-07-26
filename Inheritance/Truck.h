@@ -7,10 +7,10 @@ using namespace std;
 
 
 
-class Truck : Vehicle
+class Truck : public Vehicle
 {
 private:
-	int towingCapacity = 100;
+	int towingCapacity;
 public:
 	void displayInfo();
 	int getTowingCapacity();
@@ -30,8 +30,7 @@ void Truck::setTowingCapacity(int newTowingCapacity)
 
 void Truck::displayInfo()
 {
-	cout << "Manufacturer: " << getManufacturer() << endl;
-	cout << "Year: " << getYear() << endl;
+	Vehicle::displayInfo();
 	cout << "Towing Capacity: " << towingCapacity << endl;
 }
 

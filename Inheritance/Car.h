@@ -7,10 +7,10 @@ using namespace std;
 
 
 
-class Car : Vehicle
+class Car : public Vehicle
 {
 private:
-	int doors = 4;
+	int doors;
 public:
 	int getDoors();
 	void setDoors(int);
@@ -28,9 +28,7 @@ void Car::setDoors(int newDoors)
 
 void Car::displayInfo()
 {
-
-	cout << "Manufacturer: " << getManufacturer() << endl;
-	cout << "Year: " << getYear() << endl;
+	Vehicle::displayInfo();
 	cout << "Doors: " << doors << endl;
 }
 
